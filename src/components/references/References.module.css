@@ -1,0 +1,72 @@
+.containerReferences {
+    width: 100vw;
+    height:83vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: black solid 1px; */
+}
+
+.referencesInf {
+    display: flex;
+    flex-direction: row;
+    width: 95vw;
+    height: 40vh;
+    align-items: center;
+    justify-content: space-around;
+    /* border: grey solid 1px; */
+}
+
+.referencesInf h2{
+    margin: 10px;
+    color:  rgb(20, 129, 237);
+    text-align: center;
+}
+
+.referencesInf h3{
+    margin: 10px;
+    color:  rgb(20, 129, 237);
+}
+
+.referencesInf p{
+    margin: 10px;
+    color:  rgb(20, 129, 237);
+}
+
+.profRef {
+    width: 30vw;
+    height: 40vh;
+    text-align: center;
+    /* border: red solid 1px; */
+}
+
+.perRef{
+    height: 40vh;
+    /* border: red solid 1px; */
+}
+
+.contRefPer{
+    display: flex;
+    flex-direction: row;
+}
+
+.perRef h2{
+    margin: 10px;
+    color:  rgb(20, 129, 237);
+    text-align: center;
+}
+
+.perRef1 {
+    width: 20vw;
+    height: 30vh;
+    /* border: red solid 1px; */
+    text-align: center;
+}
+
+.perRef2 {
+    width: 20vw;
+    height: 30vh;
+    /* border: red solid 1px; */
+    text-align: center;
+}

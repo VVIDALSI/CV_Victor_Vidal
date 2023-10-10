@@ -1,0 +1,33 @@
+.containerProfile{
+    width:100vw;
+    height:83vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Tahoma;
+    padding: 50px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.profile h2{
+    font-size: 30px;
+    color:  rgb(20, 129, 237);
+}
+
+.profile p{
+    font-size: 25px;
+    color:  rgb(20, 129, 237);
+}
+
+.profile .imgFotoCV{
+    margin: 40px;
+    height: 50vh;
+    border-radius: 50%;
+    border: 3px rgba(157, 212, 240, 0.533) solid;
+    box-shadow: aquamarine;
+}
