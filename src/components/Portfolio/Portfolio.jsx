@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import imgSnK from "../../Images/Logo White.png"
-import vdSnK from "../../Videos/StringsAndKeys.mp4"
+// import vdSnK from "../../Videos/StringsAndKeys.mp4"
 import stlPortfolio from "./Portfolio.module.css"
 
 
@@ -35,7 +35,7 @@ export default function Portfolio() {
                         <iframe
                             width="560"
                             height="315"
-                            src={vdSnK}
+                            // src={vdSnK}
                             title="SPA Strings and Keys"
                             frameborder="0"
                             allowfullscreen
