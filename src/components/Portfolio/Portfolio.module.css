@@ -45,12 +45,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    border: 2px red solid;
-    border-radius: 15px;
-}
-
-.modalContent iframe{
-    border: 2px solid blue;
-    border-radius: 20px;
 }
