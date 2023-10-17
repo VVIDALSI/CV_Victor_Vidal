@@ -1,6 +1,6 @@
 .containerCard{
     width:100vw;
-    height:89vh;
+    height:84vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,39 +8,39 @@
 }
 
 .containerCard h2{
-    margin: 2px;
+    margin: 0.5vh;
+    /* font-size: 4vw; */
     text-align: center;
     font-family:Tahoma;
     color:  rgb(20, 129, 237);
 }
 
 .imgFotoCV {
-    margin: 20px;
-    /* width: 30vw; */
+    margin: 1vh;
+    /* width: 60vw; */
     border-radius: 50%;
     border: 3px rgba(157, 212, 240, 0.533) solid;
-    /* height: auto; */
 }
 
-@media (max-width: 900px){
+@media (max-width: 400px){
 
     .containerCard h2{
-        font-size: 5vw; 
+        font-size: 3vw; 
     }
 
     .imgFotoCV {
-        width: 60vw;
+        width: 40vw;
     }
     
 }
 
-@media (min-width: 900px) {
+@media (min-width: 400px) {
 
     .containerCard h2{
         font-size: 2vw; 
     }
 
     .imgFotoCV {
-        width: 25vw;
+        width: 20vw;
     }
 }

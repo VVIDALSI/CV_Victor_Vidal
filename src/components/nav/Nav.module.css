@@ -1,10 +1,7 @@
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   font-size: 2vw;
   width: 100vw;
-  height: 4vh;
+  height: 8vh;
   font-family: Tahoma;
   color: rgb(20, 129, 237);
   border: solid rgba(157, 212, 240, 0.533) 1px;
@@ -12,7 +9,7 @@
 }
 
 .active {
-  color: black;
+  color: blue;
   text-underline-offset: 5px;
   text-decoration-color: rgb(100, 200, 255);
 }
@@ -20,4 +17,48 @@
 .disable {
   text-decoration: none;
   color: inherit;
+}
+
+.mobileMenuButton {
+  display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+}
+
+.mobileMenuClosed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1000;
+}
+
+.mobileMenuOpen {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .mobileMenuButton {
+    display: flex; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+    height: 8vh;
+    width: 8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 129, 237);
+    border-radius: 0 5% 5% 0;
+  }
+
+  .mobileMenuClosed {
+    display: none; /* Oculta el menú cerrado en pantallas pequeñas */
+  }
+
+  .mobileMenuOpen {
+    display: flex; /* Muestra el menú abierto en pantallas pequeñas */
+    flex-direction: column;
+    font-size: 3vw;
+    background-color:rgb(20, 129, 237);
+    color: white;
+    overflow: visible;
+    position: fixed;
+    border-radius: 0 5% 5% 0;
+    width: 60vw;
+  }
 }

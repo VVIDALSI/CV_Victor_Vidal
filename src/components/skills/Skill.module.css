@@ -1,6 +1,6 @@
 .sklContainer {
     width:100vw;
-    height:83vh;
+    height:84vh;
     display: flex;
     flex-direction: row;
     font-family:Tahoma;
@@ -9,8 +9,7 @@
 }
 
 .skl {
-    width: 140px;
-    height: 130px;
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,10 +17,22 @@
 
 .skl img {
     padding: 2px;
+    width: 6vw;
 }
 
 .skl span {
     padding: 2px;
+    font-size: 1.5vw;
     color:  rgb(20, 129, 237);
+}
+
+@media screen and (max-width: 700px) {
+    .sklContainer{
+        flex-direction: column;
+    }
+
+    .skl span{
+        font-size: 3vw;
+    }
 }
 

@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import stlNav from "../nav/Nav.module.css"
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const NavLinkMe = ({ to, children, ...props }) => {
     return (
@@ -11,14 +11,24 @@ const NavLinkMe = ({ to, children, ...props }) => {
 };
 
 export default function Nav(props) {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+    };
     return (
         <div className={stlNav.container}>
-            <NavLinkMe to="/">Inicio</NavLinkMe>
-            <NavLinkMe to="/Profile">Perfil Profesional</NavLinkMe>
-            <NavLinkMe to="/Skills">Habilidades</NavLinkMe>
-            <NavLinkMe to="/Portfolio">Portfolio WEB</NavLinkMe>
-            <NavLinkMe to="/Experiences">Experiencias Laborales</NavLinkMe>
-            <NavLinkMe to="/References">Referencias</NavLinkMe>
+            <button className={stlNav.mobileMenuButton} onClick={toggleMobileMenu}>
+                ☰
+            </button>
+            <div className={isMobileMenuOpen ? stlNav.mobileMenuOpen : stlNav.mobileMenuClosed}>
+                <NavLinkMe to="/">Inicio</NavLinkMe>
+                <NavLinkMe to="/Profile">Perfil Profesional</NavLinkMe>
+                <NavLinkMe to="/Skills">Habilidades</NavLinkMe>
+                <NavLinkMe to="/Portfolio">Portfolio WEB</NavLinkMe>
+                <NavLinkMe to="/Experiences">Experiencias Laborales</NavLinkMe>
+                <NavLinkMe to="/References">Referencias</NavLinkMe>
+            </div>
         </div>
     )
 }

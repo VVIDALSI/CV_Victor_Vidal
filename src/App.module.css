@@ -1,26 +1,15 @@
-*{
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body{
-      background-image: url("../src/Images/19366.jpg");
-      background-size:cover;
-      background-position:initial;
-    }
-  
-    ul{
-      position: relative;
-      display: flex;
-    }
-  
-    ul li{
-      position:relative;
-      list-style: none;
-      margin: 0px 20px;
-      cursor: pointer;
-    }
-  
-    .titleHv{
-      font-family:Tahoma;
-      text-align: center;
-    }
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../src/Images/19366.jpg");
+  background-size: cover;
+  background-position: initial;
+}
+
+.appContainer{
+  width: 100vw;
+  max-width: 1900px;
+}
