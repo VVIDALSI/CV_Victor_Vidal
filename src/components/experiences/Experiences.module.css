@@ -41,15 +41,15 @@
 @media (max-width: 800px) {
     .exp {
         width: 24vw;
-        height: 20vh;
+        height: 12vh;
     }
 
     .exp img {
-        width: 16vw;
+        width: 18vw;
     }
 
     .exp span {
-        font-size: 1.5vw;
+        font-size: 1.7vw;
 
     }
 
