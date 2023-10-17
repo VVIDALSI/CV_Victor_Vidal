@@ -74,6 +74,29 @@
 
 @media (max-width: 700px) {
     .referencesInf {
-        font-size: 2vw;
+        font-size: 3vw;
     }
+
+    .referencesInf {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .profRef {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .perRef1 {
+        width: 40vw;
+        height: 30vh;
+    }
+    
+    .perRef2 {
+        width: 40vw;
+        height: 30vh;
+    }
+
+    
 }
