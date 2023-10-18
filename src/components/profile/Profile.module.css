@@ -6,7 +6,6 @@
     justify-content: center;
     font-family: Tahoma;
     padding: 40px;
-    overflow: scroll;
 }
 
 .profile {
@@ -41,10 +40,15 @@
     }
 
     .profile h2 {
-        font-size: 3vw;
+        font-size: 2vw;
     }
     
     .profile p {
-        font-size: 2vw;
+        font-size: 1.2vw;
+    }
+
+    .profile .imgFotoCV {
+        height: 14vw;
+        margin: 0px;
     }
 }

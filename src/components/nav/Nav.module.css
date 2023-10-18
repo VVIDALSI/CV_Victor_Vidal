@@ -26,6 +26,7 @@
 .mobileMenuClosed {
   display: flex;
   flex-direction: row;
+  margin-top: 2vh;
   align-items: center;
   justify-content: space-around;
   z-index: 1000;
@@ -35,7 +36,7 @@
   display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .mobileMenuButton {
     display: flex; /* Muestra el botón de hamburguesa en pantallas pequeñas */
     height: 8vh;

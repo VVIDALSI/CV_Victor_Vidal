@@ -8,9 +8,9 @@
 }
 
 .exp {
-    width: 16vw;
-    height: 26vh;
-    margin: 10px;
+    width: 18rem;
+    height: 10rem;
+    margin: 4px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,31 +27,43 @@
 }
 
 .exp img {
-    width: 10vw;
+    width: 12rem;
     padding: 2px;
 }
 
 .exp span {
-    font-size: 1.2vw;
-    padding: 2px;
+    font-size: 1.2rem;
+    padding: 1px;
     font-family: Tahoma;
     color: rgb(20, 129, 237);
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .exp {
-        width: 40vw;
-        height: 16vh;
+        width: 10rem;
+        height: 5rem;
     }
 
     .exp img {
-        width: 24vw;
+        width: 6rem;
     }
 
     .exp span {
-        font-size: 3vw;
+        font-size: 0.6rem;
+    }
+}
 
+@media (min-width: 820px) {
+    .exp {
+        width: 12rem;
+        height: 8rem;
     }
 
+    .exp img {
+        width: 8rem;
+    }
 
+    .exp span {
+        font-size: 0.8rem;
+    }
 }

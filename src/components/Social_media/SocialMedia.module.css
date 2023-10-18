@@ -1,24 +1,30 @@
-.containerSM{
+.containerSM {
     display: flex;
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
-    align-items: center;
     justify-content: center;
     border: solid rgba(157, 212, 240, 0.533) 1px;
     background-color: rgba(157, 212, 240, 0.23);
 }
 
-.containerSM ul{
+.containerSM ul {
     display: flex;
     padding: 2vh;
     align-items: center;
 }
 
-.containerSM li{
+.containerSM li {
     list-style: none;
 }
 
-.containerSM img{
+.containerSM img {
     width: 6vh;
     height: 6vh;
+}
+
+@media screen and (max-width: 800px) {
+    .containerSM img {
+        width: 4vh;
+        height: 4vh;
+    }
 }
