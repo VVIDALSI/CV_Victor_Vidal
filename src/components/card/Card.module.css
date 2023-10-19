@@ -22,25 +22,3 @@
     border: 3px rgba(157, 212, 240, 0.533) solid;
 }
 
-@media (max-width: 400px){
-
-    .containerCard h2{
-        font-size: 3vw; 
-    }
-
-    .imgFotoCV {
-        width: 40vw;
-    }
-    
-}
-
-@media (min-width: 400px) {
-
-    .containerCard h2{
-        font-size: 2vw; 
-    }
-
-    .imgFotoCV {
-        width: 20vw;
-    }
-}

@@ -16,39 +16,96 @@
 }
 
 .profile h2 {
-    font-size: 2vw;
+    font-size: 2.6vw;
     color: rgb(20, 129, 237);
 }
 
 .profile p {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
+    width: 60vw;
     color: rgb(20, 129, 237);
 }
 
 .profile .imgFotoCV {
-    margin: 40px;
-    height: 30vw;
+    height: 28vw;
+    margin-right: 2vw;
     border-radius: 50%;
     border: 3px rgba(157, 212, 240, 0.533) solid;
     box-shadow: aquamarine;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 600px) and (max-height: 600px){
     .profile {
         flex-direction: column;
-        overflow: scroll;
     }
-
+    
     .profile h2 {
-        font-size: 2vw;
+        font-size: 3vw;
     }
     
     .profile p {
-        font-size: 1.2vw;
+        font-size: 2vw;
+        width: 90vw;
     }
-
+    
     .profile .imgFotoCV {
-        height: 14vw;
-        margin: 0px;
+        height: 25vw;
+    } 
+}
+
+@media (min-width: 900px) and (min-height: 600px) and (max-width: 1500px) and (max-height: 1000px) {
+    /* .profile {
+        flex-direction: column;
+    } */
+    
+    .profile h2 {
+        font-size: 3vw;
     }
+    
+    .profile p {
+        font-size: 1.8vw;
+        width: 60vw;
+    }
+    
+    .profile .imgFotoCV {
+        height: 30vw;
+    } 
+}
+
+@media (max-height: 920px) and (max-width: 600px){
+    .profile {
+        flex-direction: column;
+    }
+    
+    .profile h2 {
+        font-size: 4.8vw;
+    }
+    
+    .profile p {
+        font-size: 3vw;
+        width: 90vw;
+    }
+    
+    .profile .imgFotoCV {
+        height: 30vw;
+    } 
+}
+
+@media (min-height: 900px) and (min-width: 600px) and (max-height: 1500px) and (max-width: 1000px) {
+    .profile {
+        flex-direction: column;
+    }
+    
+    .profile h2 {
+        font-size: 3vw;
+    }
+    
+    .profile p {
+        font-size: 2.5vw;
+        width: 80vw;
+    }
+    
+    .profile .imgFotoCV {
+        height: 30vw;
+    } 
 }
