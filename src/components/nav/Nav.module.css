@@ -1,5 +1,5 @@
 .container {
-  font-size: 2vw;
+  font-size: 1.8vw;
   width: 100vw;
   height: 8vh;
   font-family: Tahoma;
@@ -26,7 +26,7 @@
 .mobileMenuClosed {
   display: flex;
   flex-direction: row;
-  margin-top: 2vh;
+  margin-top: 5px;
   align-items: center;
   justify-content: space-around;
   z-index: 1000;
@@ -54,12 +54,19 @@
   .mobileMenuOpen {
     display: flex; /* Muestra el menú abierto en pantallas pequeñas */
     flex-direction: column;
-    font-size: 3vw;
+    font-size: 4vw;
     background-color:rgb(20, 129, 237);
     color: white;
     overflow: visible;
     position: fixed;
     border-radius: 0 5% 5% 0;
     width: 60vw;
+  }
+}
+
+@media (min-width: 920px) {
+
+  .mobileMenuClosed {
+    margin-top: 18px;
   }
 }
