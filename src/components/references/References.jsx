@@ -19,7 +19,7 @@ function References({t}) {
                         <p>Johnson & Johnson</p>
                         <p>Colombia - Cali, Valle del Cauca</p>
                         <p>{t('Ingeniero de mantenimiento')}</p>
-                        <p>Celular: +57 322 248 6948</p>
+                        <p>{t('Celular')}: +57 322 248 6948</p>
                     </div>
                 </div>
 
@@ -34,13 +34,13 @@ function References({t}) {
                             <h3>Elmer Alejandro Vidal</h3>
                             <p>Cali - Colombia</p>
                             <p>{t('Ingeniero de sistemas')}</p>
-                            <p>Celular: +57 317 704 3880</p>
+                            <p>{t('Celular')}: +57 317 704 3880</p>
                         </div>
                         <div className={stlReferences.perRef2}>
                             <h3>Diego Arturo Perez</h3>
                             <p>Cali - Colombia</p>
                             <p>{t('Ingeniero mecatrónico')}</p>
-                            <p>Celular: +57 317 809 2703</p>
+                            <p>{t('Celular')}: +57 317 809 2703</p>
                         </div>
                     </div>
 

@@ -5,8 +5,9 @@ import imgLinkedin from "../../Images/linkedin.png"
 import imgElEmpleo from "../../Images/elEmpleo.svg"
 import imgPhone from "../../Images/telefono.png"
 import imgEmail from "../../Images/email.png"
+import { withNamespaces } from 'react-i18next';
 
-export default function SocialMedia() {
+function SocialMedia({ t }) {
     return (
         <div className={stlSM.containerSM}>
             <ul>
@@ -21,7 +22,8 @@ export default function SocialMedia() {
             </ul>
             <ul>
                 <li>
-                    <a href="https://wa.me/573168511206?text=Cordial%20saludo,%20lo%20estamos contactando%20porque%20vimos%20la%20pagina%20web%20de%20su%20Hoja%20de%20vida"><img src={imgWhatsApp} alt="" /></a>
+                    {/* <a href="https://wa.me/573168511206?text=Cordial%20saludo,%20lo%20estamos contactando%20porque%20vimos%20la%20pagina%20web%20de%20su%20Hoja%20de%20vida"><img src={imgWhatsApp} alt="" /></a> */}
+                    <a href={`https://wa.me/573168511206?text=${t('whatsappMessage')}`}><img src={imgWhatsApp} alt="" /></a>
                 </li>
             </ul>
             <ul>
@@ -38,3 +40,4 @@ export default function SocialMedia() {
     )
 }
 
+export default withNamespaces()(SocialMedia);

@@ -2,9 +2,22 @@
     width:100vw;
     height:82vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family:Tahoma;
     align-items: center;
+    justify-content: space-around;
+}
+
+.devSkills{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.engSkills{
+    width: 100vw;
+    display: flex;
     justify-content: space-around;
 }
 
@@ -16,8 +29,8 @@
 }
 
 .skl img {
-    padding: 2px;
-    width: 6vw;
+    /* width: 5vw; */
+    height: 14vh;
 }
 
 .skl span {
@@ -26,13 +39,58 @@
     color:  rgb(20, 129, 237);
 }
 
-@media screen and (max-width: 700px) {
+@media (max-height: 920px) and (max-width: 600px){
     .sklContainer{
+        flex-direction: row;
+    }
+
+    .devSkills{
+        display: flex;
         flex-direction: column;
     }
 
+    .engSkills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skl{
+        padding: 2vw;
+    }
+
     .skl span{
-        font-size: 3vw;
+        font-size: 2.5vw;
+    }
+
+    .skl img {
+        height: 5.5vh;
     }
 }
 
+@media (min-height: 900px) and (min-width: 600px) and (max-height: 1500px) and (max-width: 1000px) {
+    .sklContainer{
+        flex-direction: row;
+    }
+
+    .devSkills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .engSkills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skl{
+        padding: 1.5vw;
+    }
+
+    .skl span{
+        font-size: 1.5vh;
+    }
+
+    .skl img {
+        height: 7vh;
+    }
+}
