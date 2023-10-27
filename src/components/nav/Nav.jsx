@@ -31,20 +31,22 @@ function Nav({ t }) {
 
   return (
     <div className={stlNav.container}>
-      <button className={stlNav.mobileMenuButton} onClick={toggleMobileMenu}>
-        ☰
-      </button>
-      <div className={isMobileMenuOpen ? stlNav.mobileMenuOpen : stlNav.mobileMenuClosed} onClick={closeMobileMenu}>
-        <NavLinkMe to="/">{t('Inicio')}</NavLinkMe>
-        <NavLinkMe to="/Profile">{t('Perfil Profesional')}</NavLinkMe>
-        <NavLinkMe to="/Skills">{t('Habilidades')}</NavLinkMe>
-        <NavLinkMe to="/Portfolio">{t('Portfolio WEB')}</NavLinkMe>
-        <NavLinkMe to="/Experiences">{t('Experiencias Laborales')}</NavLinkMe>
-        <NavLinkMe to="/References">{t('Referencias')}</NavLinkMe>
-        <div className={stlNav.btnLanguage}>
-          <button className={stlNav.btnEs} onClick={() => changeLanguage('es')}>{t('es')}</button>
-          <button className={stlNav.btnEn} onClick={() => changeLanguage('en')}>{t('en')}</button>
+      <div className={stlNav.titulosNav}>
+        <button className={stlNav.mobileMenuButton} onClick={toggleMobileMenu}>
+          ☰
+        </button>
+        <div className={isMobileMenuOpen ? stlNav.mobileMenuOpen : stlNav.mobileMenuClosed} onClick={closeMobileMenu}>
+          <NavLinkMe to="/">{t('Inicio')}</NavLinkMe>
+          <NavLinkMe to="/Profile">{t('Perfil Profesional')}</NavLinkMe>
+          <NavLinkMe to="/Skills">{t('Habilidades')}</NavLinkMe>
+          <NavLinkMe to="/Portfolio">{t('Portfolio WEB')}</NavLinkMe>
+          <NavLinkMe to="/Experiences">{t('Experiencias Laborales')}</NavLinkMe>
+          <NavLinkMe to="/References">{t('Referencias')}</NavLinkMe>
         </div>
+      </div>
+      <div className={stlNav.btnLanguage}>
+        <button className={stlNav.btnEs} onClick={() => changeLanguage('es')}>{t('es')}</button>
+        <button className={stlNav.btnEn} onClick={() => changeLanguage('en')}>{t('en')}</button>
       </div>
     </div>
   );
