@@ -5,7 +5,8 @@
   font-family: Tahoma;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: end; */
+  justify-content:space-between;
   color: rgb(20, 129, 237);
   border: solid rgba(157, 212, 240, 0.533) 1px;
   background-color: rgba(157, 212, 240, 0.23);
@@ -28,7 +29,7 @@
 }
 
 .mobileMenuButton {
-  display: none; /* Oculta el botón de hamburguesa en pantallas grandes */
+  display: none;
 }
 
 .mobileMenuClosed {
@@ -48,6 +49,7 @@
   width: 6vw;
   height: 8vh;
   margin-left: 4px;
+  border-radius: 10%;
   background-color: rgb(20, 129, 237);
 }
 
@@ -61,17 +63,28 @@
   background-size:cover;
 }
 
-@media (max-width: 920px) {
+/* @media (max-width: 600px) and (max-height: 600px){
+  
+}
+
+@media (min-width: 900px) and (min-height: 600px) and (max-width: 1500px) and (max-height: 1000px) {
+  
+} */
+
+@media (max-height: 920px) and (max-width: 600px){
+
   .titulosNav{
-    width: 60vw;
+    width: 50vw;
+    align-items: center;
   }
 
   .btnLanguage button{
-    width: 10vh;
+    width: 8vh;
+    font-size: 2vh;
   }
 
   .mobileMenuButton {
-    display: flex; /* Muestra el botón de hamburguesa en pantallas pequeñas */
+    display: flex;
     height: 8vh;
     width: 8vh;
     align-items: center;
@@ -81,11 +94,11 @@
   }
 
   .mobileMenuClosed {
-    display: none; /* Oculta el menú cerrado en pantallas pequeñas */
+    display: none; 
   }
 
   .mobileMenuOpen {
-    display: flex; /* Muestra el menú abierto en pantallas pequeñas */
+    display: flex;
     flex-direction: column;
     font-size: 4vw;
     background-color:rgb(20, 129, 237);
@@ -97,7 +110,81 @@
   }
 }
 
-@media (min-width: 920px) {
+@media (min-height: 900px) and (min-width: 600px) and (max-height: 1500px) and (max-width: 1000px) {
+  .titulosNav{
+    width: 62vw;
+    align-items: center;
+  }
+
+  .btnLanguage button{
+    width: 8vh;
+  }
+
+  .mobileMenuButton {
+    display: flex;
+    height: 8vh;
+    width: 8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 129, 237);
+    border-radius: 0 5% 5% 0;
+  }
+
+  .mobileMenuClosed {
+    display: none; 
+  }
+
+  .mobileMenuOpen {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    background-color:rgb(20, 129, 237);
+    color: white;
+    overflow: visible;
+    position: fixed;
+    border-radius: 0 5% 5% 0;
+    width: 60vw;
+  }
+}
+
+/* @media (max-width: 900px) {
+  .titulosNav{
+    width: 67vw;
+    align-items: center;
+  }
+
+  .btnLanguage button{
+    width: 10vh;
+  }
+
+  .mobileMenuButton {
+    display: flex;
+    height: 8vh;
+    width: 8vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(20, 129, 237);
+    border-radius: 0 5% 5% 0;
+  }
+
+  .mobileMenuClosed {
+    display: none; 
+  }
+
+  .mobileMenuOpen {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+    background-color:rgb(20, 129, 237);
+    color: white;
+    overflow: visible;
+    position: fixed;
+    border-radius: 0 5% 5% 0;
+    width: 60vw;
+  }
+}
+
+@media (min-width: 900px) {
   .titulosNav{
     width: 86vw;
   }
@@ -109,4 +196,4 @@
   .mobileMenuClosed {
     margin-top: 0px;
   }
-}
+} */
