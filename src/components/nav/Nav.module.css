@@ -36,6 +36,23 @@
   display: none;
 }
 
+.btnLanguage button{
+  width: 6vw;
+  height: 8vh;
+  margin-left: 4px;
+  background-color: rgb(20, 129, 237);
+}
+
+.btnEs{
+  background-image: url('../../Images/Español.jpg');
+  background-size:cover;
+}
+
+.btnEn{
+  background-image: url('../../Images/Usa.jpg');
+  background-size:cover;
+}
+
 @media (max-width: 920px) {
   .mobileMenuButton {
     display: flex; /* Muestra el botón de hamburguesa en pantallas pequeñas */
@@ -67,6 +84,6 @@
 @media (min-width: 920px) {
 
   .mobileMenuClosed {
-    margin-top: 18px;
+    margin-top: 0px;
   }
 }
